@@ -12,13 +12,18 @@
 </head>
 <body>
 
-  <header class="masthead section-dark section-bg embed embed-16by9">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content </a></li>
+    <li><a href="#nav">Jump to navigation </a></li>
+  </ul>
+
+  <header class="masthead section-dark section-bg embed embed-16by9" role="banner" tabindex="0">
     <div class="absolute w-1 pin-tl text-center pad-t pad-b gutter-1-2">
       <div class="grid grid-middle">
         <div class="unit [ xs-1 l-1-2 ]">
           <h1 class="masthead-title push-1-2" data-shadow="The Search for Hidden&nbsp;Galaxies">The Search for Hidden&nbsp;Galaxies</h1>
         </div>
-        <nav class="nav unit [ xs-1 l-1-2 ]">
+        <nav class="nav unit [ xs-1 l-1-2 ]" role="navigation" id="nav">
           <ul class="list-group-inline push-1-2">
             <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#galaxies">Galaxies</a></li>
             <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#techniques">Techniques</a></li>
@@ -29,7 +34,7 @@
     </div>
   </header>
 
-  <main>
+  <main role="main" id="main" tabindex="0">
 
     <section class="techniques section-light section-bg embed embed-16by9" id="techniques">
       <div class="absolute pin-c text-center island-1-2 w-1 max-length">
@@ -49,7 +54,7 @@
 
   </main>
 
-  <footer class="section-dark text-center pad-t pad-b gutter-1-2">
+  <footer class="section-dark text-center pad-t pad-b gutter-1-2" role="contentinfo" tabindex="0">
     <small>© The Search for Hidden Galaxies</small>
   </footer>
 
